@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Tela de Login</title>
-  
-</head>
-<body>
-  <form onsubmit="login()">
-    <img src="./assets/img/userLogin2.png" alt="">
-    <input id="email" type="email" placeholder="Email" maxlength="50" minlength="30" title="Email">
-    <input id="senha" type="password" placeholder="Password" maxlength="50" minlength="30" title="Password">
-    <button title="Login" type="submit">Login</button>
-  </form>
+    <title>Tela de Login</title>
+  </head>
+  <body>
+    <form onsubmit="login()">
+      <img src="./assets/img/userLogin2.png" alt="imagem do usuário" />
+      <input
+        id="email"
+        type="email"
+        placeholder="Email"
+        maxlength="50"
+        minlength="5"
+        title="Email"
+      />
+      <input
+        id="senha"
+        type="password"
+        placeholder="Password"
+        maxlength="50"
+        minlength="5"
+        title="Password"
+      />
+      <div class="battom-info">
+        <label for="marcar"><input type="checkbox" name="carregar" id="marcar"> remember me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button title="Login" type="submit">Login</button>
+    </form>
 
-  <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

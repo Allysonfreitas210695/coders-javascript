@@ -13,46 +13,105 @@ body {
 }
 
 form {
-  width: 30vw;
-  height:60vh;
+  width: 35vw;
+  height:65vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,102,1) 81%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(121,9,102,1) 81%, rgba(104,7,89,1) 94%, rgba(29,0,36,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 img{
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 10px;
   border-radius: 50%;
 }
 
 input {
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 40px;
 }
 
 input,
 button{
   width: 20vw;
   height: 30px;
+  border: 0px;
   border-radius: 8px;
-  margin-top: 22px;
+  margin-top: 18px;
   font-family: 'Roboto', sans-serif;
+  font-size: 12px;
   font-weight: 400;
 }
 
-button{
-  width: 12vw;
-  background-color: rgb(32, 30, 30);
+#email{
+  background-image: url("./assets/img/user.png");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: left; 
+  background-position-x: 14px;
+}
+
+#senha{
+  background-image: url("./assets/img/padlock.png");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: left; 
+  background-position-x: 14px;
+}
+
+.battom-info{
+  width: 260px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 13px;
+}
+
+.battom-info label{
+  display: flex;
+  text-decoration: none;
+  margin-top: 7px;
+  margin-left: 6px;
+  padding: 0px 10px;
   color: white;
-  margin-top: 50px;
+}
+
+.battom-info label input{
+  width: 14px;
+  margin-right: 10px;
+  position: absolute;
+  top: 380px;
+  left: 546px;
+}
+
+.battom-info a{
+  display: inline-block;
+  text-decoration: none;
+  margin-left: auto;
+  margin-top: 7px;
+  padding-left: 10px;
+  color: white;
+}
+
+.battom-info a:hover{
+  color: rgb(95, 93, 93);
+}
+
+button{
+  border:0px;
+  width: 12vw;
+  background-color: rgba(76, 33, 117, 0.5);
+  color: white;
+  margin-top: 40px;
 }
 
 
 button:hover{
   cursor: pointer;
-  background-color: rgb(32, 30, 30, 0.5);
+  background-color: rgba(54, 36, 70, 0.5);
 }
