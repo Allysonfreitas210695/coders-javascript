@@ -14,6 +14,10 @@ function login() {
   let senha = document.querySelector("input#senha").value;
   let acesso = false;
 
+  if(email === '' || senha === ''){
+    alert("Campo "+(email == '' && senha === '' ? 'Email e senha estão vazio!' : (senha == '' ? 'Senha estão vazio' : 'email estão vazio')));
+  }
+  
   for(let user of usuários) {
      if(user.email === email && user.senha === senha) {
        acesso = true;
